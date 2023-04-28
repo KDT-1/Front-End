@@ -20,7 +20,7 @@ body {
 }
 /* header 부분 */
 header {
-    height: 14%;
+    height: 10%;
     box-sizing: border-box;
     padding-top: 5px;
 }
@@ -52,7 +52,7 @@ header {
     box-sizing: border-box;
     margin: 5px;
     margin-bottom: 0;
-    background-image: url(./hamberger.png);
+    background-image: url(../images/menu.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -66,18 +66,10 @@ header {
     box-sizing: border-box;
     margin: 5px;
     margin-bottom: 0;
-    background-image: url(./home.png);
+    background-image: url(../images/home.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-#board{
-    height: 33px;
-    line-height: 33px;
-    margin-bottom: 0px;
-    border-bottom: 2px solid white;
-    font-size: large;
-    clear: both;
 }
 
 /* section 부분 */
@@ -88,143 +80,17 @@ section {
     flex-direction: column;
 }
 
-/* 상단 버튼 */
-#btns {
-    display: flex;
-    justify-content:space-between;
-    margin: auto 8%;
-}
-#top_btn1 {
-    width: 150px;
-    height: 40px;
-    background-color: #434874;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 13px;
-
-}
-#top_btn2 {
-    width: 150px;
-    height: 40px;
-    font-weight: bolder;
-    color: rgb(22, 22, 22);
-    background-color: #9999AE;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 13px;
-}
-#back {
-    position: relative;
-    background-color: #f4f4f4;
-    width: 85%;
-    height: 75%;
-    max-height: 600px;
-    border-radius: 13px;
-    margin: 10px auto;
-    padding: 10px;
-    overflow: hidden;
-}
-p {
-    margin: 0;
-}
-#count_all {
-    text-align: left;
-    margin: 5px;
-    color: #737373;
-}
-
-/* 게시글 카테고리 */
-#category > ul{
-    padding: 0;
-    height: 35px;
-    margin: 0;
-    border-bottom: 1px solid rgb(22, 22, 22);
-}
-
-#category > ul > li {
-    list-style: none;
-    color: #494949;
-    margin: 8px;
-}
-#cat_1 {float: left;}
-#cat_2 {float: left;}
-#cat_3 {float: right; padding-right: 10px;}
-
-/* 게시글 목록 */
-#list_all {
-    width: 100%;
-    height: 70%;
-    border-bottom: 1px solid rgb(22, 22, 22);
-}
-.content {
-    width: 100%;
-    height: 15px;
-    padding: 10px 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    white-space: nowrap;
+#board {
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid white;
+    font-size: large;
     clear: both;
-    border-bottom: 0.5px solid rgba(88, 88, 88, 0.377);
 }
-.content > li {
-    list-style: none;
-    color: #141414;
-    margin: auto 8px;
-    font-size: 15px;
-}
-li.num {
-    float: left;
-}
-li.title {
-    text-align: left;
-    float: left;
-    width: 50%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-li.date {
-    float: right;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-/* 게시판 페이지 번호 */
-#nums {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
-    height: 30px;
-    margin: 0 auto;
-    padding: 5px 20px;
-    box-sizing: border-box;
-    display: flex;   
-    justify-content:space-between 
-}
-#nums > li {
-    list-style: none;
-    color: #141414;
-    margin: 3px;
-    font-size: 15px;
-}
-#new_content{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 2%;
-    clear: both;
-    color: #141414;
-    background-color: #c7c7db;
-    width: 100px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 10px;
-    margin: 10px auto;
-    margin-bottom: 0;
+
+#board>p {
+    margin: 0;
 }
 /* nav 부분 */
 #nav {
