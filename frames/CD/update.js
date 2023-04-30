@@ -8,3 +8,8 @@ function alertToggle() {
     switchNow = false;  //스위차는 끈 상태로 바꿈
     }
 }
+
+function toggleMenu(){
+    let sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}

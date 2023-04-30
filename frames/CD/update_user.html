@@ -9,10 +9,11 @@
     <title>지켜Dream</title>
 </head>
 <body>
+ 
     <div id="header">
         <div id="logo"><img src="./images/logo.png" alt=""></div>
         <div id="home"><img src="./images/home.png" alt=""></div>
-        <div id="hamburger"><img src="./images/menu.png" alt=""></div>
+        <div id="hamburger" onclick="toggleMenu()"><img src="./images/menu.png" alt=""></div>
         <div class="selectmenu1">
             <div class="selectmenu2">개인정보 수정</div>
         </div>
@@ -20,6 +21,16 @@
     </div>
 
     <div id="content">
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">개인정보수정</a></li>
+                <li><a href="#">사용자 및 운영자 교육</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">관련사이트</a></li>
+            </ul>
+        </div>   
+    
         <div class="nav">
             <p class="up_text">이름</p>
             <input type="text" id="username" class="input" maxlength="20" placeholder="이름을 입력하세요.">
@@ -37,11 +48,10 @@
             <button class="btn">변경 완료</button>
             <button id="del_btn" onclick="alertToggle()"><img src="./images/ouptdoor.png" alt=""width="25" height="25"> 회원 탈퇴</button>
             <div class="noticeBox">
-                <p style="color:black">정말 탈퇴 하시겠습니까?</p>
+                <p id="notice_P">정말 탈퇴 하시겠습니까?</p>
                 <button class="alt_btn">네</button><button class="alt_btn" onclick="alertToggle()">아니요</button>
             </div>
         </div>
-
     </div>
 </body>
 </html>
