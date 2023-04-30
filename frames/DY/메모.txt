@@ -1,0 +1,15 @@
+
+공통 수정사항
+1. 하단의 nav를 section 밖으로 뺌
+2. 하단의 nav를 flex로 정렬 
+3. 폰트 변경(티웨이)
+
+
+
+✔ div안에 div박스들이 있는데, 앱 화면 길이를 줄였을때에도 내부 div가 부모 div를 벗어나지 않게 하려면 overflow: hidden; 을 부모 요소에 쓰면 됨
+✔ 부모 div와 자식div 여러개가 있을때
+ - 자식 div 세로로 정렬 : flex-direction: column;
+    --> 해당 flex 요소가 차지하는 비율 안에서 세로로 가운데 정렬: margin: auto;
+    --> display: flex인 부모div안에서 세로 정렬된 div들을 세로 가운데 정렬: align-items: center;
+ - 앱 화면 크기가 변함에 따라 각 자식 div의 크기가 각각 차지하는 비율에 따라 크기가 조절되게 하기
+    : flex-grow: 0.9; (부모 div 영역의 90%를 채우면서 크기가 변함)
