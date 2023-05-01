@@ -54,9 +54,9 @@ header {
     align-items: center;
 }
 #logo_img {
-    margin-left: 13px;
+    margin-left: 10px;
     margin-bottom: 0px;
-    width: 150%;
+    width: 120%;
     max-width: 300px;
     display: block;
 }

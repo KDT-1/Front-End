@@ -29,33 +29,33 @@
     background-image: url(./images/loginback.png);
     background-size: cover;
     padding: 0;
+    margin: 0;
     height: 100%;
 }
 
 body {
     /* backimage때문에 주석처리 */
     /* background-color: #18224E; */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
     color: white;
     text-align: center;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 p {color:#000}
 p.text {
-    margin-bottom: 1px;
+    margin: 5px;
+    margin-left: 10px;
     text-align: left;
 }
 
-.input {
-    width: 98%;
-    border-radius: 13px;
-}
 a {
     display: inline-block;
     margin: 0;
@@ -69,6 +69,26 @@ a {
 }
 
 /************/
+/* 상단 로고 */
+#imgbox{
+    flex-grow: 0.3;
+    width: 80%;
+    height: 30%;
+    float: left;
+    box-sizing: border-box;
+    margin: 10px auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 120%;
+    max-width: 300px;
+}
 
 /****** update.css ******/
 /*p태그중 내용들은 검정색 (update에 쓰임)*/
@@ -77,22 +97,64 @@ p.up_text{
     color: black;
     font: 18px bold;
 }
-/*인풋 박스 동그라미*/
-.input {
-    width: 98%;
-    border-radius: 13px;
-}
 
+/*인풋 박스 동그라미*/
+
+.content {
+    /* overflow: ; */
+    height: 70%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 div.nav{
     /*border: 3px solid white;*/
-    width: 65%;
+    width: 80%;
     background-color: var(--color-login-back);
-    margin: 0 auto;
-    background-origin: 60%;
-    padding: 10px 20px;
+    padding: 5% 20px;
     border-radius: 13px;
     z-index: 1;
+    height: 85%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    overflow: hidden;
 }
+#login_input{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.input {
+    padding-left: 10px;
+    border-radius: 13px;
+    width: 94%;
+    height: 30px;
+    border: none;
+}
+#auto_login{
+    height: 20px;
+    line-height: 20px;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+#auto_check{
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+
+}
+/* 회원가입/로그인 버튼 */
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
 div.btn_update{
     width: 50%;
     margin: 0 auto;
@@ -101,21 +163,48 @@ div.btn_update{
 
 .btn{
     color: white;
-    background-color: var(--color-background);
+    background-color: var(--color-btn-darknavy);
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+}
+
+.btn_search {
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 13px;
     padding: 5px;
     margin: 5px;
     display: inline-block;
 }
-
+hr {
+    border-color: #000;
+    color: #000;
+    width: 95%;
+}
+#easy_lgin {
+    margin: 5px auto;
+    margin-bottom: 10px;
+}
+#login_icon {
+    display: flex;
+    justify-content:space-around;
+    padding: 0 20px;
+}
+#login_icon > a > img {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
 #del_btn{    
     color: white;
     float: right;
     border: none;
 }
-
-
 
 .noticeBox {
     border: 3px solid red;
@@ -133,7 +222,6 @@ div.btn_update{
 }
 
 
-
 .alt_btn{
     color: black;
     height: 30px;
@@ -146,47 +234,6 @@ div.btn_update{
     display: inline-block;
 }
 
-/************/
-
-
-
-div {
-    overflow: auto;
-}
-
-#header {
-    background-color: #18224E;
-    box-sizing: border-box;
-    position: fixed; 
-    text-align: left;
-    top: 0;
-    width: 100%;
-    height: 18vh;
-    padding: 5px;
-    z-index: 1; 
-    color: black;
-    float: left;
-}
-
-#header>div {
-    box-sizing: border-box;
-    height: 48px;
-}
-
-#logo {
-    width: 30%;
-    height: 80%;
-    float: left;
-    margin: 5px 10px;
-}
-
-
-img {
-    width: 300px;
-    margin: auto;
-    overflow: auto;
-    box-sizing: border-box;
-}
 
 #hamburger {
     width: 15%;
@@ -223,12 +270,6 @@ img {
     background-color: #434874;
     height: 50px;
 }
-#content {
-    position: absolute;
-    bottom: 40%;
-    margin: 40% auto;
-}
-
 
 
  /****** ID / PW 찾기  ******/
@@ -279,6 +320,8 @@ img {
     border: none;
     border-radius: 13px;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     float: right;
+    height: 30px;
+    width: 110px;
 }

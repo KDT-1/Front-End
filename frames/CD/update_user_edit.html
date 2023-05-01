@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./update.css">
+    <link rel="stylesheet" href="./update_edit.css">
     <script src="update.js"></script>
     <title>지켜Dream</title>
 </head>
 <body>
- 
-    <div id="header">
-        <div id="logo"><img src="./images/logo.png" alt=""></div>
-        <div id="home"><img src="./images/home.png" alt=""></div>
-        <div id="hamburger" onclick="toggleMenu()"><img src="./images/menu.png" alt=""></div>
-        <div class="selectmenu1">
-            <div class="selectmenu2">개인정보 수정</div>
+    <header>
+        <div id="logo">
+            <img id="logo_img" src="./images/logo.png" alt="">
         </div>
-        <hr>
-    </div>
-
-    <div id="content">
-
+        <div id="hamburger" onclick="toggleMenu()"></div>
+        <div id="home"></div>
+    </header>
+    <section>
+        <div id="board">개인정보 수정</div>
         <div class="sidebar">
             <ul>
                 <li><a href="#">개인정보수정</a></li>
@@ -30,7 +26,6 @@
                 <li><a href="#">관련사이트</a></li>
             </ul>
         </div>   
-    
         <div class="nav">
             <p class="up_text">이름</p>
             <input type="text" id="username" class="input" maxlength="20" placeholder="이름을 입력하세요.">
@@ -44,14 +39,16 @@
             <input type="text" id="protector1" class="input" maxlength="20" placeholder="보호자 연락처1를 입력하세요.">
             <p class="up_text">보호자 연락처2</p>
             <input type="text" id="protector2" class="input" maxlength="20" placeholder="보호자 연락처2를 입력하세요.">
-            <button class="btn">작성 취소</button>
-            <button class="btn">변경 완료</button>
-            <button id="del_btn" onclick="alertToggle()"><img src="./images/ouptdoor.png" alt=""width="25" height="25"> 회원 탈퇴</button>
+            <div id="btns_bottom">
+                <div type="button" class="btn" id="btn_bottom1">< 작성 취소</div>
+                <div type="button" class="btn" id="btn_bottom2">변경 완료 ></div>
+            </div>
+            <div type="button" id="del_btn" onclick="alertToggle()"><img src="./images/ouptdoor.png" alt=""width="25" height="25"> <p>회원 탈퇴</p></div>
             <div class="noticeBox">
                 <p id="notice_P">정말 탈퇴 하시겠습니까?</p>
                 <button class="alt_btn">네</button><button class="alt_btn" onclick="alertToggle()">아니요</button>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
