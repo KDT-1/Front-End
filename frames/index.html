@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry's Portfolio</title>
+    <meta name="auther" content="Merry">
+    <meta name="description" content="우주에서 짱먹는 개발자">
+    <link rel="icon" type="image/png" href="../images/deer.png">
+    <script src="https://kit.fontawesome.com/860826cfd0.js" crossorigin="anonymous"></script>
+    <script src="./admin_page_script.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head> 
+<body>
+    <!-- Navbar 시작 -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-earth-americas" style="color: #e0e0e0;"></i>
+            <a href="#">Admin page</a>
+        </div>
+        <div class="menu-container" id="nav__menu">
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item" id="mn_about" onclick="goToScroll('about')">회원 관리</li>
+                <li class="navbar__menu__item"  onclick="goToScroll('skills')"  id="mn_skills">게시글 관리</li>
+                <li class="navbar__menu__item" id="mn_work" onclick="goToScroll('work')">로그인</li>
+            </ul>
+        </div>
+        <!-- 버튼 시작 -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-burger"></i>
+        </button>
+        <!-- 버튼 끝 -->
+    </nav>
+    <!-- Navbar 끝 -->
+    <!-- 로그인 화면 -->
+    <form action="#">
+        <div class="loginbox">
+            <p class="top">Login</p>
+            <hr>
+            <p class="login">ID: <input type="text" class='input' maxlength="20" placeholder="아이디를 입력하세요" required></p>
+            <p class="login">PW: <input type="password" class='input' maxlength="20" placeholder="비밀번호를 입력하세요" required></p>
+            <div class="buttons">
+                <div type="button" class="btn_bottom" id="submit" onclick="alert('안녕!')">Submit</div>
+                <div type="button" class="btn_bottom" id="join" onclick="location.href='./회원가입.html'">Join</div>
+            </div>
+        </div>
+        </form>
+</body>
+</html>

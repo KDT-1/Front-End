@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry's Portfolio</title>
+    <meta name="auther" content="Merry">
+    <meta name="description" content="우주에서 짱먹는 개발자">
+    <link rel="icon" type="image/png" href="../images/deer.png">
+    <script src="https://kit.fontawesome.com/860826cfd0.js" crossorigin="anonymous"></script>
+    <script src="./admin_page_script.js" defer></script>
+    <link rel="stylesheet" href="./user.css">
+</head> 
+<body>
+    <!-- Navbar 시작 -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-earth-americas" style="color: #e0e0e0;"></i>
+            <a href="#">Admin page</a>
+        </div>
+        <div class="menu-container" id="nav__menu">
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" id="mn_about" onclick="goToScroll('about')">회원 관리</li>
+                <li class="navbar__menu__item"  onclick="goToScroll('skills')"  id="mn_skills">게시글 관리</li>
+                <li class="navbar__menu__item" id="mn_work" onclick="goToScroll('work')">로그아웃</li>
+            </ul>
+        </div>
+        <!-- 버튼 시작 -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-burger"></i>
+        </button>
+        <!-- 버튼 끝 -->
+    </nav>
+    <!-- Navbar 끝 -->
+    <!-- 프로젝트 시작 -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>회원관리</h1>
+            <div class="work__categories">
+                <button class="category__btn selected" onclick="countClass('.project', this)">
+                    전체 <span class="category__count count__All" id="category__countAll"></span>
+                </button>
+                <button class="category__btn" onclick="countClass('.Front', this)">
+                    사용자 <span class="category__count count__Front"  id="category__countFront">2</span>
+                </button>
+                <button class="category__btn" onclick="countClass('.Back', this)">
+                    운영자 <span class="category__count count__Back" id="category__countBack"></span>
+                </button>
+                <button class="category__btn" onclick="countClass('.AI', this)">
+                    Admin <span class="category__count count__AI" id="category__countAI"></span>
+                </button>
+            </div>
+            <div class="user_list">
+
+            </div>
+        </div>
+    </section>
+    <!-- 프로젝트 끝 -->
+
+</body>
+</html>
