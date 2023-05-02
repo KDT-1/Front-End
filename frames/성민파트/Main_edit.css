@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --color-background: #18224e;
+    --color-nav-selected: rgb(70, 84, 128);
+    --color-board-back: #f4f4f4;
+    --color-login-back: #9999aeee;
+    --color-btn-darknavy:#434874;
+    --color-btn-navy:#505694;
+    --color-btn-lightnavy: #656ba2;
+    --color-btn-blue: #5a6ca8;
+    --color-btn-noact: #9999ae;
+    --color-btn-act: #656fc8;
+    --color-btn-yello: #ffcc4d;
+    --color-btn-red: #ff3131;
+    --font-subtitle: 18px;
+    --size-border-radius: 13px;
+}
+html {
+    padding: 0;
+    height: 100%;
+    background-color: #18224E;
+}
+body {
+    height: 100%;
+    color: white;
+    text-align: center;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    font-family: 'twayair';
+    font-weight: bolder;
+}
+/* header 부분 */
+header {
+    height: 10%;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+#logo {
+    width: 40%;
+    height: 60%;
+    float: left;
+    box-sizing: border-box;
+    margin: 5px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo_img {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    width: 120%;
+    max-width: 300px;
+    display: block;
+}
+
+#hamburger {
+    width: 14%;
+    height: 60%;
+    float: right;
+    margin-right: 0;
+    box-sizing: border-box;
+    margin: 5px;
+    margin-bottom: 0;
+    background-image: url(./images/hamberger.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#home {
+    width: 14%;
+    height: 60%;
+    float: right;
+    margin-right: 15px;
+    box-sizing: border-box;
+    margin: 5px;
+    margin-bottom: 0;
+    background-image: url(./images/home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* section 부분 */
+section{ 
+    display: flex;
+    flex-direction: column;
+}
+#img_siren{
+    width: 160px;
+    height: 160px;
+}
+
+div {
+    overflow: hidden;
+}
+div[id="hamburger"]{
+    display: block;
+}
+div[id="hamburger"] + label {
+    display: block;
+    width: 60px;
+    height: 40px;
+    cursor:pointer;
+}
+
+div[id="hamburger"]+ label > span{
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: black;
+}
+#speaker_sound {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+}
+.speaker {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    /* display: none; */
+}
+
+.display {
+    display: flex;
+    width: 100%;
+}
+
+#siren > img{
+    position: relative;
+    margin: 100px auto 10px;
+    width: 50%;
+}
+
+#siren > p {
+    margin-top: 0;
+    color: #FFDE59
+}
+
+#singo{
+    background-color: red;
+    border-radius: 13px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20% 0;
+}
+
+#jikim{
+    background-color: #FFDE59;
+    border-radius: 13px;
+    width: 75%;
+    padding: 5% 0;
+    margin: auto;
+    color:black;
+}
+
+.singo_btn{
+    background-color: gray;
+    border-radius: 13px;
+    width: 75%;
+    margin: 10% auto;
+    padding: 10% 0;
+}
+
+#start_btn{
+    background-color: yellow;
+    border-radius: 13px;
+    width: 75%;
+    height: 35px;
+    margin: 10% auto;
+    padding: 2% 0;
+}
+
+#siren_btn{
+    background-color: black;
+    border-radius: 13px;
+    border: 3px solid white;
+    width: 75%;
+    height: 35px;
+    margin: 10% auto;
+    padding: 2% 0;
+}
+
+
+
+
+/******************************************************************************/
+
+.selected {
+    color: white;
+}
+
+
+#search {
+    position: relative;
+    margin-top: 40px;
+}
+
+#search img {
+    position : absolute;
+    width: 20px;
+    top: 5px;
+    right: 15px;
+    margin: 0;
+}
+
+#map {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    background-size: cover;
+    z-index: -1;
+}
+
+#content {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: white;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    padding: 5px;
+    z-index: 1;
+    color:black;
+    float: left;
+}
+
+#content>p {
+    margin: 5px 0;
+    height: 50px;
+    line-height: 50px;
+    color: #CF1717;
+    font-weight: bold;
+}
+
+#content>h1 {
+    margin: 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: bolder;
+    display: inline;
+}
+
+#content>h2 {
+    margin: 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    display: inline;
+}
+
+h2.tag {
+    color: #888888;
+}
+
+p#searchbtn>img {
+    position: static;
+    float: right;
+    height: 50%;
+    z-index: -5;
+}
+
+.sidebar{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.sidebar.active{
+    width: 50%;
+    height: 100%;
+    right: 0;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    /*overflow: hidden;*/   /*내용이 창을 벗어나는 경우 숨겨짐*/
+}
+/*
+.sidebar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+}
+*/
+.sidebar ul li {
+    display: flex;
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.sidebar img {
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 80%;
+    height: auto; /* 높이는 자동으로 조정됩니다. */
+}
+.sidebar ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.sidebar li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+hr {
+    border: 2px solid black;
+    width: 80%;
+}
+.small_letter {
+    font-size: 15px; /* 적용된 글씨의 크기 */
+    font-weight: normal; /* 적용된 글씨의 굵기 */
+    color: gray; /* 적용된 글씨의 색상 */
+    margin-left: 10px; /* 적용된 글씨에 한칸 들여쓰기 */
+}
