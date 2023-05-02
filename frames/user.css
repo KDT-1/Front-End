@@ -20,6 +20,7 @@
     --color-deepgray: rgb(92, 98, 105);
     --color-navbar-gray: rgb(52,58,64);
     --color-navbar-lightgray:rgb(87, 93, 99);
+    --color-back-lightgray: rgba(216, 216, 221, 0.7);
     --font-large: 48px;
     --font-medium: 28px;
     --font-ragular: 18px;
@@ -52,17 +53,13 @@ button {
     cursor: pointer;
 }
 
-h1 {
-    font-size: var(--font-large);
-    font-weight: bold;
-    color: var(--color-black);
-    margin: 16px 0px;
-}
-
 h2 {
     font-size: var(--font-medium);
     color: var(--color-black);
-    margin: 8px 0px;
+    margin: 0;
+    padding: 10px 20px;
+    padding-top: 25px;
+    text-align: left;
 }
 
 h3 {
@@ -135,9 +132,8 @@ p {
 
 /* section 공통 */
 .section {
-    padding: 50px;
-    padding-top:90px;
-    text-align: center;
+    padding: 0px;
+    padding-top:60px;
     margin: auto;
 }
 
@@ -145,20 +141,26 @@ p {
     max-width: 1700px;
     margin: auto;
 }
-
-/*내 작업실*/
+/* section 제목 */
+.section__title {
+    width: 100%;
+    border-bottom: 0.5px solid var(--color-gray);
+    background-color: var(--color-back-lightgray);
+}
+/*리스트*/
 .work__categories {
-    margin: 20px;
+    margin: 10px;
+    overflow:hidden
 }
 .category__btn {
     /* border: 1px solid var(--color-gray); */
     font-family: 'twayair';
-    border-radius: var(--size-border-radius);
-    font-size: var(--font-ragular);
-    padding: 8px 40px;
+    font-size: var(--font-small);
+    padding: 5px 30px;
     color: black;
-    background-color: white; 
-    border: 2px solid var(--color-navbar-lightgray);
+    background-color: rgba(255, 255, 255, 0.767); 
+    border: 1px solid var(--color-navbar-lightgray);
+    margin-right: 10px ;
 }
 
 .category__btn.selected, .category__btn:hover {
@@ -166,16 +168,10 @@ p {
     color: var(--color-white);
 }
 
-.category__btn.selected .category__count, .category__btn:hover .category__count {
-    opacity: 1;
-    top: 0;
-}
-
 .category__count {
-    background-color: var(--color-black);
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0); 
     font-size: var(--font-small);
-    color: var(--color-white);
+    color: black;
     width: 24px;
     height: 24px;
     line-height: 24px;
@@ -184,12 +180,14 @@ p {
     top: -20px;
     left: 4px;
     opacity: 0;
-    transition: all var(--animation-duration) ease-in; 
+    opacity: 1;
+    top: 0;
+    /* transition: all var(--animation-duration) ease-in;  */
 }
-
 
 /* 3번문제 셋팅 */
 .user_list {
+    margin: 10px;
     border: 1px solid var(--color-gray);
     height: 900px;
 }
