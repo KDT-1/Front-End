@@ -43,6 +43,7 @@ div[id="hamburger"]+ label > span{
     position: relative;
     margin: 100px auto 10px;
     width: 50%;
+    height: auto;
 }
 
 #siren > p {
