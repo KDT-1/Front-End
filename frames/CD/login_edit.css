@@ -132,10 +132,13 @@ div.nav{
 }
 .input {
     padding-left: 10px;
-    border-radius: 13px;
     width: 94%;
-    height: 30px;
+    height: 25px;
     border: none;
+    border-radius: 13px;
+    font-size: small;
+    font-family: 'twayair';
+    margin-bottom: 15px;
 }
 #auto_login{
     height: 20px;

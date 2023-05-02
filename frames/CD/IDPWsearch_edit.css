@@ -78,9 +78,12 @@ p.up_text{
 .input {
     padding-left: 10px;
     width: 94%;
-    height: 30px;
+    height: 25px;
     border: none;
     border-radius: 13px;
+    font-size: small;
+    font-family: 'twayair';
+    margin-bottom: 15px;
 }
 .content {
     /* overflow: ; */
