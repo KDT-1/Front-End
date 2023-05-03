@@ -69,7 +69,7 @@ header {
     box-sizing: border-box;
     margin: 5px;
     margin-bottom: 0;
-    background-image: url(./images/hamberger.png);
+    background-image: url(../images/hamberger.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -83,7 +83,7 @@ header {
     box-sizing: border-box;
     margin: 5px;
     margin-bottom: 0;
-    background-image: url(./images/home.png);
+    background-image: url(../images/home.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -137,7 +137,6 @@ p.up_text{
     background-color: var(--color-login-back);
     padding: 3% 20px;
     border-radius: 13px;
-
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -203,7 +202,6 @@ div.btn_update{
 
 .alt_btn{
     color: black;
-    height: 30px;
     width: 50px;
     background-color: yellow;
     border: none;
@@ -245,6 +243,27 @@ div.btn_update{
     color: black;
     margin: 5% 10px;
 }
+
+
+.sidebar img {
+    margin: 25px auto;
+    align-items: center;
+    max-width: 40%;
+    height: auto; /* 높이는 자동으로 조정됩니다. */
+}
+.sidebar ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: medium;
+}
+a.main {
+    color: black;
+}
+a.main:visited {
+    color: black;
+}
 a.sub {
     color: #888888;
     font-weight: 300;
@@ -254,22 +273,6 @@ a.sub:visited {
     color: #888888;
     font-weight: 300;
     padding-left: 10px;
-}
-a:visited {
-    color: black;
-}
-.sidebar img {
-    margin: auto;
-    margin-bottom: 40px;
-    align-items: center;
-    max-width: 55%;
-    height: auto; /* 높이는 자동으로 조정됩니다. */
-}
-.sidebar ul li a {
-    position: relative;
-    display: block;
-    width: 100%;
-    text-decoration: none;
 }
 .sidebar li {
     list-style: none;

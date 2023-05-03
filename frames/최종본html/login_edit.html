@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="backimg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login_edit.css">
+    <title>지켜Dream</title>
+</head>
+
+<body>
+    <div id="imgbox">
+        <img src="./images/logo.png" alt="">
+    </div>
+    <div class="content">
+        <div class="nav">
+            <div id="login_input">
+                <p class="text">아이디</p>
+                <input type="text" id="userid" class="input" maxlength="20" placeholder="아이디를 입력하세요."><br>
+                <p class="text">비밀번호</p>
+                <input type="password" id="userpw" class="input" maxlength="20" placeholder="비밀번호를 입력하세요.">
+                <p id="auto_login"><input type="checkbox" name="Auto-Login" value="자동로그인" id="auto_check">자동로그인</p>
+                <div class="center"> <button class="btn" onclick="location.href='./signup_edit.html'">회원가입</button>
+                <button class="btn" onclick="location.href='./Main_1.html'">로그인</button></div>
+                <div type="button" class="btn_search" onclick="location.href='./IDPWsearch_edit.html'">아이디/비밀번호 찾기</div>
+            </div>
+            <hr>
+            <p id="easy_lgin">간편로그인</p>
+            <div id="login_icon">
+                <a href="https://www.google.com" target="_blank"><img src="./images/google.png" alt="" width="25"
+                        height="25"></a>
+                <a href="https://www.daum.net" target="_blank"><img src="./images/kakao.png" alt="" width="25"
+                        height="25"></a>
+                <a href="https://www.naver.com" target="_blank"><img src="./images/naver.png" alt="" width="25"
+                        height="25"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

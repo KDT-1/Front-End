@@ -1,0 +1,17 @@
+body
+    header(높이 10%) 
+        logo
+            img
+        hamberger
+        home
+    section (높이 83%) - flex
+        board
+        btn
+        back
+    nav(50px) -flex
+
+------------------------------
+    Main
+body
+    header
+    section
