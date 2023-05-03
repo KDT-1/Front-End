@@ -43,12 +43,16 @@
             </div>
             <div id="board"><p>게시판 글쓰기</p></div>
             <div id="back">
-                <div id="category_combo">
-                    <div id="combo1">카테고리</div><div id="combo2">▼</div>
+                <select id="category_combo" name="job">
+                    <option value="지킴이집 사용후기">지킴이집 사용후기</option>
+                    <option value="위험지역 공유">위험지역 공유</option>
+                    <option value="지킴이집 업주 자유게시판">지킴이집 업주 자유게시판</option>
+                </select></p>
+                <div id="title">
+                    <textarea id="title_content" name="content" cols="50" rows="5" placeholder="제목을 입력하세요."></textarea>
                 </div>
-                <div id="title">제목:</div>
                 <div id="text">
-                    <p>내용을 입력하세요.</p>
+                    <textarea id="text_content"  name="content" cols="50" rows="5" placeholder="내용을 입력하세요."></textarea>
                 </div>
                 <div id="camera"></div>
             </div>

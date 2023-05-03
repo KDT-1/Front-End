@@ -35,6 +35,9 @@ html.backimg{
 h3 {
     margin: 10px auto;
 }
+#signup_title {
+    margin: 5px auto;
+}
 body {
     /* backimage때문에 주석처리 */
     /* background-color: #18224E; */
@@ -84,22 +87,20 @@ p.up_text{
 }
 .content {
     /* overflow: ; */
-    height: 90%;
+    height: 88%;
     width: 100%;
     margin: 0;
     padding: 0;
-    /* align-items: center; */
     justify-content: center;
     display: flex;
 }
 div.nav{
-    /*border: 3px solid white;*/
     width: 85%;
     background-color: var(--color-login-back);
     padding: 3% 20px;
     border-radius: 13px;
     z-index: 1;
-    height: 95%;
+    height: 97%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -109,13 +110,14 @@ div.nav{
 /* 회원가입에서 중복버튼 css*/
 #btn_check{
     height: 20px;
-    margin: 10px auto;
+    margin: 8px auto;
+    margin-bottom: 0;
     background-color: var(--color-btn-darknavy);
     border-radius: 15px;
 }
 #btn_submit {
     height: 20px;
-    margin: 10px auto;
+    margin: 8px auto;
     background-color: var(--color-background);
     border-radius: 15px;
 }
@@ -142,7 +144,6 @@ div.btn_update{
     float: right;
     border: none;
 }
-
 
 
 .noticeBox {
@@ -203,11 +204,23 @@ div.btn_update{
 #imgbox{
     flex-grow: 0.1;
     width: 250px;
-    height: 10%;
+    height: 20%;
     float: left;
     box-sizing: border-box;
     margin: 5px auto;
-    margin-top: 15px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#imgbox_signup {
+    flex-grow: 0.1;
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    margin: 5px auto;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -53,7 +53,7 @@ body {
 header {
     height: 10%;
     box-sizing: border-box;
-    padding-top: 5px;
+    padding-top: 28px;
 }
 
 #logo {
@@ -77,12 +77,11 @@ header {
 
 #hamburger {
     width: 14%;
-    height: 60%;
+    height: 85%;
     float: right;
     margin-right: 0;
     box-sizing: border-box;
-    margin: 5px;
-    margin-bottom: 0;
+    margin: 0px;
     background-image: url(../images/hamberger.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -91,17 +90,17 @@ header {
 
 #home {
     width: 14%;
-    height: 60%;
+    height: 85%;
     float: right;
     margin-right: 15px;
     box-sizing: border-box;
-    margin: 5px;
-    margin-bottom: 0;
+    margin: 0px;
     background-image: url(../images/home.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
 /* section 부분 */
 section{ 
     height: 90%;
@@ -109,15 +108,31 @@ section{
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
+    padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
+
 #board{
     height: 33px;
     line-height: 33px;
     margin-bottom: 0px;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
     font-size: large;
-    clear: both;
+    display: flex;
+}
+.selectmenu1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.selectmenu2 {
+    color: #B8B8B8;
+    width: 50%;
+}
+
+.selected {
+    color: white;
 }
 #board >p {
     margin: 0;
@@ -232,7 +247,7 @@ div[id="hamburger"]+ label > span{
 }
 
 .singo_btn > img {
-    width: 28%;
+    width: 23%;
 }
 
 
@@ -352,6 +367,7 @@ p#searchbtn>img {
     z-index: -5;
 }
 
+/* 햄버거 */
 .sidebar{
     display: none;
     position: absolute;
@@ -359,24 +375,17 @@ p#searchbtn>img {
 }
 .sidebar.active{
     width: 50%;
-    height: 90%;
-    bottom: 0;
+    height: 100%;
+    top: 0;
     right: 0;
     display: block;
     background-color: white;
     padding: 5px;
     color: white;
     text-align: left;
-    /*overflow: hidden;*/   /*내용이 창을 벗어나는 경우 숨겨짐*/
 }
 
-/* .sidebar ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    list-style: none;
-} */
+
 .sidebar > ul {
     padding: 0px;
 }
@@ -431,10 +440,4 @@ hr {
     border: 1px solid var(--color-login-back);
     width: 90%;
     margin: 15px auto ;
-}
-.small_letter {
-    font-size: 15px; /* 적용된 글씨의 크기 */
-    font-weight: normal; /* 적용된 글씨의 굵기 */
-    color: gray; /* 적용된 글씨의 색상 */
-    margin-left: 10px; /* 적용된 글씨에 한칸 들여쓰기 */
 }

@@ -132,7 +132,7 @@ div.nav{
     overflow: hidden;
 }
 #login_input{
-    height: 70%;
+    /* height: 70%; */
     display: flex;
     flex-direction: column;
     justify-content:space-around;
