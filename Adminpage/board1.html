@@ -211,7 +211,6 @@
 							>Dark</a
 						>
 					</div>
-
 					<h4 class="weight-600 font-18 pb-10">Menu Dropdown Icon</h4>
 					<div class="sidebar-radio-group pb-10 mb-10">
 						<div class="custom-control custom-radio custom-control-inline">
@@ -385,128 +384,206 @@
 
 
 		<div class="main-container">
-			<div class="xs-pd-20-10 pd-ltr-20">
-				<div class="title pb-20">
-					<h2 class="h3 mb-0">회원 현황</h2>
-				</div>
-
-				<div class="row pb-10">
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">50,000</div>
-									<div class="font-14 text-secondary weight-500">
-										사용자
-									</div>
+			<div class="pd-ltr-20 xs-pd-20-10">
+				<div class="min-height-200px">
+					<div class="page-header">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<div class="title">
+									<h4>사용자</h4>
 								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#00eccf">
-										<i class="icon-copy dw dw-calendar1"></i>
-									</div>
-								</div>
+								<nav aria-label="breadcrumb" role="navigation">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">
+											<a href="#">게시판 관리</a>
+										</li>
+										<li class="breadcrumb-item active" aria-current="page">
+											사용자
+										</li>
+									</ol>
+								</nav>
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">230</div>
-									<div class="font-14 text-secondary weight-500">
-										운영자
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#ff5b5b">
-										<span class="icon-copy ti-heart"></span>
-									</div>
-								</div>
+					
+					<!-- Checkbox select Datatable start -->
+					<div class="page-header">
+						<div class="row">
+							<h4 class="col-md-6 col-sm-12" id="list-title">게시글 목록<div>
+								<select class="category-combo">
+									<option value="지킴이집 사용후기">지킴이집 사용후기</option>
+									<option value="위험지역 공유">위험지역 공유</option>
+								</select>
+							</div></h4>
+							<div class="col-md-6 col-sm-12 text-right" id="btn-delete">
+								<a
+										class="btn btn-primary dropdown-toggle"
+										href="html5-editor1.html"
+										role="button"
+										id="btn-create-a"
+									>
+										글쓰기
+									</a>
+								<a
+										class="btn btn-primary dropdown-toggle"
+										href="#"
+										role="button"
+										data-toggle="dropdown"
+										id="btn-delete-a"
+									>
+										삭제
+									</a>
 							</div>
 						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">10</div>
-									<div class="font-14 text-secondary weight-500">
-										Admin
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon">
-										<i
-											class="icon-copy fa fa-stethoscope"
-											aria-hidden="true"
-										></i>
-									</div>
-								</div>
-							</div>
+						
+						<div class="pb-20">
+							<table class="checkbox-datatable table nowrap">
+								<colgroup>
+									<col style="width: 5%;">
+									<col style="width: 15%;">
+									<col style="width: 15%;">
+									<col style="width: 15%;">
+									<col style="width: 40%;">
+									<col style="width: 10%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>
+											<div class="dt-checkbox">
+												<input
+													type="checkbox"
+													name="select_all"
+													value="1"
+													id="example-select-all"
+												/>
+												<span class="dt-checkbox-label"></span>
+											</div>
+										</th>
+										<th>카테고리</th>
+										<th>작성자 ID</th>
+										<th>작성자 Name</th>
+										<th>글 제목</th>
+										<th>작성 일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>지킴이집 사용후기</td>
+										<td>apple</td>
+										<td>김사과</td>
+										<td>GS25 지킴이집 후기 공유합니다.</td>
+										<td>2023-05-06</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Angelica Ramos</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Ashton Cox</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Bradley Greer</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Brenden Wagner</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Caesar Vance</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Cedric Kelly</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Dai Rios</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Doris Wilder</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Fiona Green</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Gavin Cortez</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Herrod Chandler</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Hope Fuentes</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Jena Gaines</td>
+										<td>김사과</td>
+										<td>010-0000-0000</td>
+										<td>apple@apple.com</td>
+										<td>010-1111-1111</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-				
-				</div>
-				<hr>
-				<div class="title pb-20">
-					<h2 class="h3 mb-0">게시판 현황</h2>
-				</div>
-
-				<div class="row pb-10">
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">1,375</div>
-									<div class="font-14 text-secondary weight-500">
-										사용자
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#00eccf">
-										<i class="icon-copy dw dw-calendar1"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">124</div>
-									<div class="font-14 text-secondary weight-500">
-										운영자
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#ff5b5b">
-										<span class="icon-copy ti-heart"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">40</div>
-									<div class="font-14 text-secondary weight-500">
-										공지
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon">
-										<i
-											class="icon-copy fa fa-stethoscope"
-											aria-hidden="true"
-										></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<!-- Checkbox select Datatable End -->
 				</div>
 			</div>
 		</div>
@@ -514,7 +591,7 @@
 			2023 Lucy - All rights reserved
 		</div>
 		
-		
+
 		<!-- js -->
 		<script src="vendors/scripts/core.js"></script>
 		<script src="vendors/scripts/script.min.js"></script>
@@ -526,6 +603,16 @@
 		<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
 		<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
 		<script src="vendors/scripts/dashboard3.js"></script>
+		<!-- buttons for Export datatable -->
+		<script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+		<script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+		<script src="src/plugins/datatables/js/buttons.print.min.js"></script>
+		<script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
+		<script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
+		<script src="src/plugins/datatables/js/pdfmake.min.js"></script>
+		<script src="src/plugins/datatables/js/vfs_fonts.js"></script>
+		<!-- Datatable Setting js -->
+		<script src="vendors/scripts/datatable-setting.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
