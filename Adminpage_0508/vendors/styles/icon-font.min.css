@@ -6867,7 +6867,8 @@
 }
 
 .dw-logout1:before {
-  content: "\ee50"
+  content: "\ee50";
+  margin-left: 5px;
 }
 
 .dw-name:before {
