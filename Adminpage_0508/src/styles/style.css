@@ -467,6 +467,7 @@ p {
 }
 .form-control.form-control-sm{
 	height: 38px;
+	width: 80%;
 }
 .form-control.form-control-line{
 	border-left: 0;

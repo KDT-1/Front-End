@@ -1857,13 +1857,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
     background: #ecf0f4
 }
 
-.left-side-bar:before {
-    content: "";
-    z-index: -1;
-    width: 100%;
-    /* background: rgba(0, 0, 0, .3); */
-    display: none
-}
+
 
 .left-side-bar.open {
     left: 0
@@ -2464,13 +2458,15 @@ body.IE .register-page-wrap .container {
     -webkit-box-shadow: 0 0 28px rgba(0, 0, 0, .08);
     box-shadow: 0 0 28px rgba(0, 0, 0, .08);
     margin-bottom: 30px;
-    padding: 20px
+    padding: 20px;
+    
 }
 
 .page-header .row {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+
 }
 
 .page-header h4 {
@@ -4386,6 +4382,7 @@ body.IE .register-page-wrap .container {
     width: 100px;
     padding: 10px;
     padding-right: 30px;
+    white-space: nowrap;
 }
 #btn-delete-a::after {
     text-align: center;
@@ -4409,7 +4406,7 @@ body.IE .register-page-wrap .container {
     margin-left: 20px;
     font-family: 'twayair';
     height: 25px;
-    width: 200px;
+    width: 90%;
     padding-left: 10px;
     font-size: 14px;
     border-radius: 8px;
@@ -4417,6 +4414,7 @@ body.IE .register-page-wrap .container {
 }
 #list-title {
     display: flex;
+    white-space: nowrap;
 }
 .board-create-title-p{
     display: flex;
@@ -4436,14 +4434,14 @@ body.IE .register-page-wrap .container {
     display: flex;
     
 }
-#btn-save-a{
+#btn-save-a, #btn-delete-board{
     background-color: rgb(59, 89, 152) !important;
     border-color: rgb(59, 89, 152) !important;
     margin-top: 10px; 
     width: 100px;
     margin-left: auto
 }
-#btn-save-a::after {
+#btn-save-a, #btn-delete-board::after {
     text-align: center;
     content: none !important;
 }
@@ -4451,8 +4449,30 @@ body.IE .register-page-wrap .container {
     display: flex;
     align-items: center;
 }
-
+#list-title-div{
+    white-space: nowrap;
+}
+.h6 > .category-combo {
+    width: 20%
+}
+.board-category{
+    font-size: small;
+    font-weight: 500;
+    height: 25px;
+    display: inline-block;
+}
+.board-title{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.board-content-box{
+    padding: 20px;
+    padding-left: 10px;
+}
 @media (min-width:1301px) and (max-width:1400px) {
+    
     .header {
         width: calc(100% - 250px)
     }
@@ -4473,9 +4493,6 @@ body.IE .register-page-wrap .container {
         bottom: 0; */
         margin-left: calc(250px + 1%);
     }
-}
-
-@media (min-width:1200px) and (max-width:1400px) {
     .device-usage-chart .width-50-p {
         width: 100%
     }
@@ -4515,8 +4532,9 @@ body.IE .register-page-wrap .container {
 }
 
 @media (max-width:1300px) {
+    
     .main-container {
-        padding-left: 280px;
+        padding-left: 250px;
         padding-right: 5px
     }
     .left-side-bar{
@@ -4603,6 +4621,7 @@ body.IE .register-page-wrap .container {
 }
 
 @media (max-width:1024px) {
+    
     .header {
         width: 100%;
         padding-left: 280px;
@@ -4620,7 +4639,7 @@ body.IE .register-page-wrap .container {
     }
 
     .main-container {
-        padding-top: 10px
+        padding-top: 80px
     }
 
     .header-left .search-toggle-icon {
@@ -4657,6 +4676,7 @@ body.IE .register-page-wrap .container {
 }
 
 @media (max-width:767px) {
+    
     .header {
         position: fixed;
         left: 0;
