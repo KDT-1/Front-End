@@ -2329,7 +2329,7 @@ body.IE .register-page-wrap .container {
 }
 
 .register-page-wrap .register-box {
-    max-width: 410px;
+    max-width: 480px;
     margin: 0 auto
 }
 
@@ -2340,7 +2340,7 @@ body.IE .register-page-wrap .container {
 }
 
 .register-page-wrap .wizard-content .wizard .steps {
-    position: relative
+    display: none;
 }
 
 .register-page-wrap .wizard-content .wizard>.steps .step {
@@ -4376,7 +4376,7 @@ body.IE .register-page-wrap .container {
     margin-left: 10px
 }
 
-
+/* 추가한 부분 */
 
 #btn-delete{
     width: 100px;
@@ -4441,7 +4441,7 @@ body.IE .register-page-wrap .container {
     width: 100px;
     margin-left: auto
 }
-#btn-save-a, #btn-delete-board::after {
+#btn-save-a::after, #btn-delete-board::after {
     text-align: center;
     content: none !important;
 }
@@ -4471,6 +4471,16 @@ body.IE .register-page-wrap .container {
     padding: 20px;
     padding-left: 10px;
 }
+.form-group > button {
+    margin-left: auto;
+    margin-right: 15px;
+    
+}
+/* 뺄지말지 고민중 */
+.forgot-password {
+    display: none;
+}
+
 @media (min-width:1301px) and (max-width:1400px) {
     
     .header {
@@ -4657,9 +4667,9 @@ body.IE .register-page-wrap .container {
         display: none
     }
 
-    .register-page-wrap .wizard-content .wizard {
+    /* .register-page-wrap .wizard-content .wizard {
         padding-left: 300px
-    }
+    } */
 
     .register-page-wrap .wizard-content .wizard .steps {
         width: 300px
