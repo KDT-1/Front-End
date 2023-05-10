@@ -853,7 +853,10 @@ textarea.form-control {
 }
 
 .input-group {
-    margin-bottom: 25px
+    margin-bottom: 20px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .input-group.custom>.custom-select,
@@ -909,7 +912,9 @@ textarea.form-control {
 .input-group-lg>.input-group-prepend>.btn,
 .input-group-lg>.input-group-prepend>.input-group-text {
     height: 50px;
-    font-size: 16px
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .has-success {
@@ -972,7 +977,7 @@ textarea.form-control {
     font-weight: 500;
     padding: .719rem 1rem;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 25px;
     border-radius: 8px
 }
 
@@ -4480,7 +4485,21 @@ body.IE .register-page-wrap .container {
 .forgot-password {
     display: none;
 }
+.btn-auth {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+#hidden-div {
+    display: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+    height: 250px;
 
+    
+}
 @media (min-width:1301px) and (max-width:1400px) {
     
     .header {

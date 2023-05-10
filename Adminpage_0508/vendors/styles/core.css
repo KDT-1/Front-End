@@ -3396,8 +3396,8 @@ fieldset:disabled a.btn {
     color: #212529;
     background-color: #d6d6d6;
     border-radius: 5px !important;
-    height: 40px;
-    line-height: 40px;
+    font-size: 15px !important;
+    font-weight: bold !important;
     box-sizing: border-box;
 }
 
