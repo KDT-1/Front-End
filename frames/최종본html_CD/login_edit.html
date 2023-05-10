@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/login_edit.css">
     <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js" integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+    
     <title>지켜Dream</title>
 </head>
 
@@ -32,8 +35,9 @@
             <div id="login_icon">
                 <a href="https://www.google.com" target="_blank"><img src="./images/google.png" alt="" width="25"
                         height="25"></a>
-                <a href="https://www.daum.net" target="_blank"><img src="./images/kakao.png" alt="" width="25"
-                        height="25"></a>
+                <div type="button" onclick="loginWithKakao()"><img src="./images/kakao.png" alt=""width="25"
+                    height="25"></div>
+                <script src="./kakaologin.js"></script>
                 <div id="naver_id_login"></div>
                 <script type="text/javascript" src="./naverlogin.js"></script>
             </div>
