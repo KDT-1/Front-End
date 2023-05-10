@@ -4,7 +4,7 @@ Kakao.init('2c74fcda8af80bc5d6aa0e623b906071'); // 사용하려는 앱의 JavaSc
 
 function loginWithKakao() {
     Kakao.Auth.authorize({
-    redirectUri: 'http://skckdeo.dothome.co.kr/team/Main_1.htm',
+    redirectUri: 'http://skckdeo.dothome.co.kr/team/Main_1.html',
     state: 'userme',
     });
     }
