@@ -81,7 +81,7 @@ a {
     align-items: center;
     overflow: hidden;
 }
-img {
+#logo {
     margin-top: 10px;
     margin-left: 15px;
     width: 120%;
@@ -194,15 +194,12 @@ hr {
     margin-bottom: 10px;
 }
 #login_icon {
-    display: flex;
+    /*카카오 버튼이랑 네이버 버튼 한줄에 하나씩만 보이게 할라고 주석 */
+    display: flex; 
     justify-content:space-around;
     padding: 0 20px;
 }
-#login_icon > a > img {
-    width: 35px;
-    height: 35px;
-    margin: 0;
-}
+
 #del_btn{    
     color: white;
     float: right;
