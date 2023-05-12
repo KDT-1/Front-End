@@ -4,47 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>지켜 Dream Admin Page</title>
-    <meta name="auther" content="Merry">
-    <meta name="description" content="우주에서 짱먹는 개발자">
-    <link rel="icon" type="image/png" href="../images/deer.png">
-    <script src="https://kit.fontawesome.com/860826cfd0.js" crossorigin="anonymous"></script>
-    <script src="./admin_page_script.js" defer></script>
-    <link rel="stylesheet" href="./index.css">
-</head> 
+    <title>최초의 내 사이트 </title>
+    <style>
+        @font-face {
+            font-family: 'KCC-Ganpan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .fontF {font-family: 'KCC-Ganpan';}
+
+        body {text-align: center; margin: auto;}
+        h2 {border: 3px dotted deepskyblue; background-color: deepskyblue; color: #fff;}
+        li {display: inline; margin: 30px;}
+        
+    </style>
+</head>
 <body>
-    <!-- Navbar 시작 -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fa-solid fa-earth-americas" style="color: #e0e0e0;"></i>
-            <a href="#">Admin page</a>
-        </div>
-        <div class="menu-container" id="nav__menu">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item" id="mn_about" onclick="goToScroll('about')">회원 관리</li>
-                <li class="navbar__menu__item"  onclick="goToScroll('skills')"  id="mn_skills">게시글 관리</li>
-                <li class="navbar__menu__item" id="mn_work" onclick="goToScroll('work')">로그인</li>
-            </ul>
-        </div>
-        <!-- 버튼 시작 -->
-        <button class="navbar__toggle-btn">
-            <i class="fa-solid fa-burger"></i>
-        </button>
-        <!-- 버튼 끝 -->
-    </nav>
-    <!-- Navbar 끝 -->
-    <!-- 로그인 화면 -->
-    <form action="#">
-        <div class="loginbox">
-            <p class="top">Login</p>
-            <hr>
-            <p class="login">ID: <input type="text" class='input' maxlength="20" placeholder="아이디를 입력하세요" required></p>
-            <p class="login">PW: <input type="password" class='input' maxlength="20" placeholder="비밀번호를 입력하세요" required></p>
-            <div class="buttons">
-                <div type="button" class="btn_bottom" id="submit" onclick="alert('안녕!')">Submit</div>
-                <div type="button" class="btn_bottom" id="join" onclick="location.href='./회원가입.html'">Join</div>
-            </div>
-        </div>
-        </form>
+    <h1 class="fontF">상달이 홈페이지</h1>
+    <p>최초의 상달이 홈페이지 오신 걸 환영합니다.</p>
+    <img src="images/my.png" alt="내사진">
+    <p class="fontF"><a href="./resume.html">이력서</a></p>
+
+    <h2 class="fontF">2023.03.28 과제</h2>
+    <li class="fontF"><a href="./new.html" target="_blank">뉴스기사</a></li>
+    <li class="fontF"><a href="./bookmark.html" target="_blank">즐겨찾기</a></li>
+
+    <h2 class="fontF">2023.03.29 과제</h2>
+    <li class="fontF"><a href="./userinput0329.html" target="_blank">회원가입</a></li>
+    <li class="fontF"><a href="./login.html" target="_blank">로그인</a></li>
+    
+    <h2 class="fontF">2023.04.03 과제</h2>
+    <li class="fontF"><a href="./clonecoding.html" target="_blank">상달이의 티스트로</a></li>
+
+    <h2 class="fontF">2023.04.07 과제</h2>
+    <li class="fontF"><a href="./time.html" target="_blank">시간 추출 </a></li>
+    <li class="fontF"><a href="./RockPaperScissors.html" target="_blank">가위바위보 게임</a></li>
+    <li class="fontF"><a href="./lottoNO.html" target="_blank">로또 뽑기</a></li>
+
+    <h2 class="fontF">2023.04.08 과제(정규 표현식이 적용된 회원가입창)</h2>
+    <li class="fontF"><a href="./userinput.html" target="_blank">회원가입</a></li>
+
+    <h2 class="fontF">2023.04.17 과제프로젝트 홈페이지(팀과제)</h2>
+    <li class="fontF"><a href="./Porindex.html" target="_blank">프로젝트</a></li>
+
+    <h2 class="fontF">2023.05 지켜Dream</h2>
+    <li class="fontF"><a href="./team/login_edit.html" target="_blank">프로젝트</a></li>
 </body>
 </html>

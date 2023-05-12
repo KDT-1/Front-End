@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/search_jh.css">
+    <script src="update.js"></script>
+    <title>지켜Dream</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logo_img" src="./images/logo.png" alt="logo">
+        </div>
+        <div id="hamburger" onclick="toggleMenu()">
+        </div>
+        <div id="home" onclick="location.href='./Main_1.html'">
+        </div>
+    </header>
+    <section>
+        <div class="sidebar">
+            <ul>
+                <li id="userimg"><img src="./images/사람모양_배너.png" alt="" width="100" height="100"></li>
+                <li><a href="./update_user_edit.html">개인정보수정</a></li>
+                <hr>
+                <li><a href="./edu.html">사용자 및 운영자 교육</a></li>
+                <li class="small_letter"><a href="./edu.html" class="sub">아동안전지킴이</a></li>
+                <li class="small_letter"><a href="./edu2.html" class="sub">여성안전지킴이</a></li>
+                <hr>
+                <li><a href="./board_user.html">게시판</a></li>
+                <!-- <li class="small_letter"><a href="./board_user.html" class="sub">사용자</a></li>
+                <li class="small_letter"><a href="./board_store.html" class="sub">운영자</a></li>
+                <li class="small_letter"><a href="./board_admin.html" class="sub">관리자</a></li> -->
+                <hr>
+                <li><a href="#">관련사이트</a></li>
+                <li class="small_letter"><a href="./patrol.html" class="sub">순찰지역 등록</a></li>
+                <li class="small_letter"><a href="./safety.html" class="sub">안전 귀가 신청</a></li>
+                <li class="small_letter"><a href="#" class="sub">지킴이집 신청</a></li>
+            </ul>
+        </div> 
+        <div id="board">
+            <div class="selectmenu2" onclick="location.href='./Main_2.html'">긴급신고 대기</div>
+            <div class="selectmenu2 selected" onclick="location.href='./search.html'">지킴이집 검색</div>
+        </div>
+        <div>
+            <div id="map"><img src="../images/map.png" alt=""></div>
+            <div id="search"><input type="text" placeholder="구/동을 입력하세요"><img src="./images/search.png" style="width: 20px; height: 20px; margin: 5px; float: right;"></div>
+        </div>
+        <div id="content">
+            <img src="../images/femalepin.png" style="width: 50px; height: 50px;float: left;"><p>여성 안심지킴이집</p>
+            <h1>역삼점 GS 편의점</h1>
+            <h2 class="tag">#GS25</h2><h2 class="tag">#편의점</h2>
+            <h2 style="display:block">서울시 강남구 테헤란로 152 강남파이낸스</h2>
+            <img src="../images/clock.png" style="width: 20px; height: 20px; margin: 5px; float: left;">
+            <h2 style="display:inline; float: left;">24시간 영업</h2>
+            <img src="../images/phone.png" style="width: 20px; height: 20px; margin: 5px; float: left;">
+            <h2 style="display:inline; float: left;">010-4938-6950</h2>
+        </div>
+    </section>
+</body>
+</html>
