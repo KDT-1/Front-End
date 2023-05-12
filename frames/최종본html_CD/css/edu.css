@@ -142,6 +142,28 @@ section {
     background-color: #434874;
     text-align: center;
 }
+/* 하단 이동 버튼 */
+#Down_btns {
+    position: fixed;
+    bottom: 65px;
+    right: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 4%;
+    flex-grow: 0.03;
+}
+.url_btn{
+    width: 90px;
+    height: 40px;
+    font-weight: bolder;
+    color: rgb(22, 22, 22);
+    background-color: #a1a1acb7;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+}
 
 #back {
     position: relative;

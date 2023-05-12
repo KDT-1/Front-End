@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/update_edit.css">
+    <link rel="stylesheet" href="./css/edu.css">
     <script src="./update.js"></script>
     <title>지켜Dream</title>
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -18,6 +19,7 @@
         <div id="home" onclick="location.href='./Main_1.html'">
         </div>
     </header>
+    
     <section>
         <div class="sidebar">
             <ul>
@@ -39,31 +41,16 @@
                 <li class="small_letter"><a href="#" class="sub">지킴이집 신청</a></li>
             </ul>
         </div>  
-
-        <div id="board">개인정보 수정</div>
-        <div class="nav">
-            <p class="up_text">이름</p>
-            <input type="text" id="username" class="input" maxlength="20" placeholder="이름을 입력하세요.">
-            <p class="up_text">비밀번호</p>
-            <input type="password" id="userpw" class="input" maxlength="20" placeholder="비밀번호를 입력하세요.">
-            <p class="up_text">비밀번호 확인</p>
-            <input type="password" id="userpw_a" class="input" maxlength="20" placeholder="비밀번호를 입력하세요.">
-            <p class="up_text">휴대폰 번호(본인)</p>
-            <input type="text" id="HP" class="input" maxlength="20" placeholder="번호를 입력하세요.">
-            <p class="up_text">보호자 연락처1[필수]</p>
-            <input type="text" id="protector1" class="input" maxlength="20" placeholder="보호자 연락처1를 입력하세요.">
-            <p class="up_text">보호자 연락처2</p>
-            <input type="text" id="protector2" class="input" maxlength="20" placeholder="보호자 연락처2를 입력하세요.">
-            <div id="btns_bottom">
-                <div type="button" class="btn" id="btn_bottom1">작성 취소</div>
-                <div type="button" class="btn" id="btn_bottom2">변경 완료</div>
-            </div>
-            <div type="button" id="del_btn" onclick="delToggle()"><img src="./images/ouptdoor.png" alt=""width="25" height="25"> <p>회원 탈퇴</p></div>
-            <div class="noticeBox">
-                <p id="notice_P">정말 탈퇴 하시겠습니까?</p>
-                <div type="button" class="alt_btn">네</div><div type="button" class="alt_btn" onclick="delToggle()">아니요</div>
-            </div>
+        <div id="board"><p>순찰지역 등록</p></div>
+        <iframe src="http://patrol.police.go.kr/usr/main.do" id="iframe_i"></iframe>
+        <div id = 'Down_btns'>
+            <div class="url_btn" onclick= "location.href='http://patrol.police.go.kr/usr/main.do'">이동 ></div>
         </div>
     </section>
+    <div id="nav">
+        <div class="menu selected" onclick="location.href='./patrol.html'">순찰지역 등록</div>
+        <div class="menu " onclick="location.href='./safety.html'">안전귀가</div>
+        <div class="menu">지킴이집 신청</div>
+    </div>
 </body>
 </html>
