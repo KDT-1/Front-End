@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/860826cfd0.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/board_store.css">
+        <link rel="stylesheet" href="./css/board_user.css">
         <script src="./update.js"></script>
         <title>지켜Dream</title>
     </head>
@@ -19,6 +19,7 @@
             <div id="home" onclick="location.href='./Main_1.html'">
             </div>
         </header>
+
         <section>
             <div class="sidebar">
                 <ul>
@@ -29,25 +30,25 @@
                     <li class="small_letter"><a href="./edu.html" class="sub">아동안전지킴이</a></li>
                     <li class="small_letter"><a href="./edu2.html" class="sub">여성안전지킴이</a></li>
                     <hr>
-                    <li><a href="./board_user.html">게시판</a></li>
-                    <!-- <li class="small_letter"><a href="./board_user.html" class="sub">사용자</a></li>
+                    <li><a href="#">게시판</a></li>
+                    <li class="small_letter"><a href="./board_user.html" class="sub">사용자</a></li>
                     <li class="small_letter"><a href="./board_store.html" class="sub">운영자</a></li>
-                    <li class="small_letter"><a href="./board_admin.html" class="sub">관리자</a></li> -->
-
+                    <li class="small_letter"><a href="./board_admin.html" class="sub">관리자</a></li>
                     <hr>
-                    <li><a href="#">관련사이트</a></li>
-                    <li class="small_letter"><a href="./patrol.html" class="sub">순찰지역 등록</a></li>
-                    <li class="small_letter"><a href="./safety.html" class="sub">안전 귀가 신청</a></li>
+                    <li><a href="./sites.html">관련사이트</a></li>
+                    <li class="small_letter"><a href="#" class="sub">순찰지역 등록</a></li>
+                    <li class="small_letter"><a href="#" class="sub">안전 귀가 신청</a></li>
                     <li class="small_letter"><a href="#" class="sub">지킴이집 신청</a></li>
                 </ul>
             </div>  
             <div id="board"><p>게시판</p></div>
-            <div class="top_btn">지킴이집 업주 자유게시판</div>
+            <div id = 'btns'>
+                <div class="top_btn btn_selected">지킴이집 사용후기</div> <div class="top_btn">위험지역 공유</div>
             </div>
             <div id="back">
                 <div id="count_all">
                     <div>전체 764개의 글</div>
-                    <div id="new_content"  onclick="location.href='./board_create.html'">글쓰기</div>
+                    <div id="new_content" onclick="location.href='./board_create.html'">글쓰기</div>
                 </div>
                 <div id="category">
                     <ul>
@@ -73,6 +74,11 @@
                         <li class="date">2023-04-18</li>
                     </ul>
                 </div>
+            </div>
+            <div id="nav">
+                <div class="menu selected" onclick="location.href='./board_user.html'">사용자</div>
+                <div class="menu" onclick="location.href='./board_store.html'">운영자</div>
+                <div class="menu" onclick="location.href='./board_admin.html'">공지</div>
             </div>
         </section>        
     </body>
