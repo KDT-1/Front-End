@@ -62,3 +62,38 @@ function playMusic(){
         switch_siren = false;
     }
 }
+/* 아이디 / 패스워드 찾기 */
+
+let IDswitch = false;    //스위치 상태 기억할 변수
+function alertToggle() {
+    if (IDswitch == false) {  //스위치가 꺼져 있으면
+    document.querySelector(".noticeBoxID").style.display = "block"; // 보여주고
+    IDswitch = true; // 스위치는 켠 상태로 바꿈
+    } else {
+    document.querySelector(".noticeBoxID").style.display = "none";  // 숨겨주고
+    IDswitch = false;  //스위차는 끈 상태로 바꿈
+    }
+}
+
+let PWswitch = false;  
+function PWToggle() {
+    if (PWswitch == false) {  //스위치가 꺼져 있으면
+    document.querySelector(".noticeBoxPW").style.display = "block"; // 보여주고
+    PWswitch = true; // 스위치는 켠 상태로 바꿈
+    } else {
+    document.querySelector(".noticeBoxPW").style.display = "none";  // 숨겨주고
+    PWswitch = false;  //스위차는 끈 상태로 바꿈
+    }
+}
+
+let switchNow2 = false;
+function PWAToggle() {
+    if (switchNow2 == false) {  //스위치가 꺼져 있으면
+    document.querySelector(".noticeBoxPWA").style.display = "block"; // 보여주고
+    switchNow = true; // 스위치는 켠 상태로 바꿈
+    } else {
+    document.querySelector(".noticeBoxPWA").style.display = "none";  // 숨겨주고
+    switchNow2 = false;  //스위차는 끈 상태로 바꿈
+    }
+}
+
