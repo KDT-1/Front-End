@@ -20,9 +20,31 @@ function toggleMenu(){
 // main2.html에서 시작버튼 누를시 종료로 바뀌는 함수
 let switch_start = false;
 function singo_btn() {
+
     let singo = document.querySelectorAll('.singo_btn');
-    const start_btn = document.querySelector('#start_btn')
-    singo.forEach((data) => data.classList.toggle('active'));
+    const start_btn = document.querySelector('#start_btn');
+    const telButton = document.getElementById('tel');
+    const smsButton = document.getElementById('sms');
+
+    const tel = "document.location.href = 'tel:010-5754-8340'";
+    const sms = "document.location.href = 'sms:01057548340&body=문자메세지 테스트중'"; // 아이폰 기준
+
+    singo.forEach((data) => {
+        data.classList.toggle('active');
+
+        if (data.classList.contains('active')) {
+            telButton.setAttribute('onclick', `${tel}`);
+            smsButton.setAttribute('onclick', `${sms}`);
+        } else {
+            telButton.setAttribute('onclick', "#");
+            smsButton.setAttribute('onclick', "#");
+        }
+        
+    });
+
+    // telButton.setAttribute('onclick', `${tel}`);
+    // smsButton.setAttribute('onclick', `${sms}`);
+
     if(switch_start==false){
         start_btn.innerText = "종료(작동중)";
         start_btn.style.backgroundColor='var(--color-btn-red)';
