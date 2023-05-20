@@ -119,4 +119,7 @@ function PWAToggle() {
     switchNow2 = false;  //스위차는 끈 상태로 바꿈
     }
 }
-
+// 게시판 페이지 뒤로 가기 할때 쓰임
+function goBack() {
+    window.history.back();
+}
