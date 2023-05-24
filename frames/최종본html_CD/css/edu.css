@@ -286,7 +286,7 @@ li.date {
 }
 .sidebar.active{
     width: 50%;
-    height: 140%;
+    height: 100%;
     top: 0;
     right: 0;
     display: block;
@@ -323,6 +323,7 @@ li.date {
     width: 100%;
     text-decoration: none;
     font-size: medium;
+    color: black;
 }
 a.main {
     color: black;

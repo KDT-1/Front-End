@@ -219,14 +219,13 @@ div.btn_update{
 .sidebar.active{
     width: 50%;
     height: 100%;
-    bottom: 0;
+    top: 0;
     right: 0;
     display: block;
     background-color: white;
     padding: 5px;
     color: white;
     text-align: left;
-    /*overflow: hidden;*/   /*내용이 창을 벗어나는 경우 숨겨짐*/
 }
 
 
@@ -256,6 +255,7 @@ div.btn_update{
     width: 100%;
     text-decoration: none;
     font-size: medium;
+    color: black;
 }
 a.main {
     color: black;
