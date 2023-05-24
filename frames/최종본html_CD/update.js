@@ -17,9 +17,10 @@ function toggleMenu(){
     sidebar.classList.toggle('active');
 }
 
-// main2.html에서 시작버튼 누를시 종료로 바뀌는 함수
 let switch_start = false;
 function singo_btn() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    console.log(userAgent);
 
     let singo = document.querySelectorAll('.singo_btn');
     const start_btn = document.querySelector('#start_btn');
@@ -27,7 +28,7 @@ function singo_btn() {
     const smsButton = document.getElementById('sms');
 
     const tel = "document.location.href = 'tel:010-5754-8340'";
-    const sms = "document.location.href = 'sms:01057548340&body=문자메세지 테스트중'"; // 아이폰 기준
+    const sms = "document.location.href = ";
 
     singo.forEach((data) => {
         data.classList.toggle('active');
@@ -39,24 +40,33 @@ function singo_btn() {
             telButton.setAttribute('onclick', "#");
             smsButton.setAttribute('onclick', "#");
         }
-        
     });
 
-    // telButton.setAttribute('onclick', `${tel}`);
-    // smsButton.setAttribute('onclick', `${sms}`);
+    if (/iphone|ipad|ipod/.test(userAgent)) {
+        // iOS 처리 코드 추가
+        console.log("iOS에서 실행 중입니다.");
+        sms += "'sms:01057548340&body=문자메세지 테스트중'";
+    } else if (/android/.test(userAgent)) {
+        // Android 처리 코드 추가
+        console.log("Android에서 실행 중입니다.");
+        sms += "'sms:01057548340?body=문자메세지 테스트중'";
+    }
 
-    if(switch_start==false){
+    if (switch_start == false) {
         start_btn.innerText = "종료(작동중)";
-        start_btn.style.backgroundColor='var(--color-btn-red)';
-        start_btn.style.color='white';
+        start_btn.style.backgroundColor = 'var(--color-btn-red)';
+        start_btn.style.color = 'white';
         switch_start = true;
     } else {
         start_btn.innerText = "시작";
-        start_btn.style.backgroundColor='var(--color-btn-yello)';
-        start_btn.style.color='black';
+        start_btn.style.backgroundColor = 'var(--color-btn-yello)';
+        start_btn.style.color = 'black';
         switch_start = false;
     }
+
+    smsButton.setAttribute('onclick', `${sms}`);
 }
+
 
 // main1.html 에서 사이렌 이미지위에 와이파이 뜨게 하는 js 
 let speaker = false;
