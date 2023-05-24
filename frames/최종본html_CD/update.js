@@ -45,11 +45,11 @@ function singo_btn() {
     if (/iphone|ipad|ipod/.test(userAgent)) {
         // iOS 처리 코드 추가
         console.log("iOS에서 실행 중입니다.");
-        sms += "'sms:01057548340&body=문자메세지 테스트중'";
+        sms += "'sms:01057548340&body=고객님의 소중한 가족이 위험합니다!'";
     } else if (/android/.test(userAgent)) {
         // Android 처리 코드 추가
         console.log("Android에서 실행 중입니다.");
-        sms += "'sms:01057548340?body=문자메세지 테스트중'";
+        sms += "'sms:01057548340?body=고객님의 소중한 가족이 위험합니다!'";
     }
 
     if (switch_start == false) {
